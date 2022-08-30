@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Leverage Ratio Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="financialleverageRadio" name="variables" checked>
+  <label for="financialleverageRadio">Financial leverage</label>
+
+  <input type="radio" id="currentassetsRadio" name="variables">
+  <label for="currentassetsRadio">Current assets</label>
+
+  <input type="radio" id="noncurrentassetsRadio" name="variables">
+  <label for="noncurrentassetsRadio">Non-current assets</label>
+
+  <input type="radio" id="totalequityRadio" name="variables">
+  <label for="totalequityRadio">Total equity</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">Current assets</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Non-current assets</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Total equity</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
